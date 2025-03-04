@@ -1,0 +1,1543 @@
+const quizData = {
+    easy: [
+        {
+          "question": "What does LAN stand for?",
+          "options": ["Local Area Network", "Long Area Network", "Large Array Network", "Linear Access Node"],
+          "answer": "Local Area Network"
+        },
+        {
+          "question": "Which network covers a city-wide area?",
+          "options": ["LAN", "WAN", "MAN", "PAN"],
+          "answer": "MAN"
+        },
+        {
+          "question": "What does MAN stand for?",
+          "options": ["Mobile Area Network", "Metropolitan Area Network", "Multiple Access Network", "Machine Area Network"],
+          "answer": "Metropolitan Area Network"
+        },
+        {
+          "question": "What does WAN stand for?",
+          "options": ["Wireless Area Network", "Wide Area Network", "World Access Network", "Web Access Network"],
+          "answer": "Wide Area Network"
+        },
+        {
+          "question": "How many layers are in the OSI model?",
+          "options": ["5", "6", "7", "8"],
+          "answer": "7"
+        },
+        {
+          "question": "Which network topology connects all devices to a central hub?",
+          "options": ["Ring", "Star", "Bus", "Mesh"],
+          "answer": "Star"
+        },
+        {
+          "question": "In which network topology do all devices connect to a single cable?",
+          "options": ["Ring", "Star", "Bus", "Mesh"],
+          "answer": "Bus"
+        },
+        {
+          "question": "Which network topology provides the highest redundancy?",
+          "options": ["Ring", "Star", "Bus", "Mesh"],
+          "answer": "Mesh"
+        },
+        {
+          "question": "Which layer of the OSI model is responsible for establishing, maintaining, and terminating connections?",
+          "options": ["Transport Layer", "Network Layer", "Session Layer", "Data Link Layer"],
+          "answer": "Session Layer"
+        },
+        {
+          "question": "Which layer of the OSI model deals with routing?",
+          "options": ["Transport Layer", "Network Layer", "Physical Layer", "Data Link Layer"],
+          "answer": "Network Layer"
+        },
+        {
+          "question": "Which layer of the OSI model is responsible for physical addressing?",
+          "options": ["Network Layer", "Transport Layer", "Physical Layer", "Data Link Layer"],
+          "answer": "Data Link Layer"
+        },
+        {
+          "question": "Which layer of the OSI model deals with electrical, mechanical, and functional specifications?",
+          "options": ["Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"],
+          "answer": "Physical Layer"
+        },
+        {
+          "question": "Which of the following is a connection-oriented protocol?",
+          "options": ["UDP", "IP", "TCP", "ICMP"],
+          "answer": "TCP"
+        },
+        {
+          "question": "Which of the following is a connectionless protocol?",
+          "options": ["TCP", "UDP", "HTTP", "FTP"],
+          "answer": "UDP"
+        },
+        {
+          "question": "What does TCP stand for?",
+          "options": ["Transmission Control Protocol", "Transfer Control Protocol", "Transport Control Protocol", "Traffic Control Protocol"],
+          "answer": "Transmission Control Protocol"
+        },
+        {
+          "question": "What does UDP stand for?",
+          "options": ["Universal Data Protocol", "User Datagram Protocol", "Uniform Data Protocol", "Unidirectional Data Protocol"],
+          "answer": "User Datagram Protocol"
+        },
+        {
+          "question": "Which encoding technique uses voltage transitions to represent data?",
+          "options": ["Manchester Encoding", "ASCII", "UNICODE", "Baudot Code"],
+          "answer": "Manchester Encoding"
+        },
+        {
+          "question": "What is the primary purpose of data encoding?",
+          "options": ["Data compression", "Error detection", "Converting data into a format suitable for transmission", "Data encryption"],
+          "answer": "Converting data into a format suitable for transmission"
+        },
+        {
+          "question": "Which technique allows multiple signals to share a medium?",
+          "options": ["Encoding", "Multiplexing", "Switching", "Routing"],
+          "answer": "Multiplexing"
+        },
+        {
+          "question": "What does FDM stand for?",
+          "options": ["Frequency Division Multiplexing", "Fast Data Movement", "File Data Management", "Full Duplex Mode"],
+          "answer": "Frequency Division Multiplexing"
+        },
+        {
+          "question": "What does TDM stand for?",
+          "options": ["Total Data Management", "Time Division Multiplexing", "Transfer Data Mode", "Transmission Data Model"],
+          "answer": "Time Division Multiplexing"
+        },
+        {
+          "question": "Which device forwards packets between networks?",
+          "options": ["Hub", "Switch", "Router", "Repeater"],
+          "answer": "Router"
+        },
+        {
+          "question": "Which device operates at the Data Link layer and filters traffic based on MAC addresses?",
+          "options": ["Hub", "Switch", "Router", "Gateway"],
+          "answer": "Switch"
+        },
+        {
+          "question": "What is the primary function of a gateway?",
+          "options": ["To connect similar networks", "To connect different types of networks", "To amplify signals", "To filter traffic"],
+          "answer": "To connect different types of networks"
+        },
+        {
+          "question": "Which transmission media offers the highest bandwidth?",
+          "options": ["Twisted pair cable", "Coaxial cable", "Fiber optic cable", "Radio waves"],
+          "answer": "Fiber optic cable"
+        },
+        {
+          "question": "Which of the following is an example of guided media?",
+          "options": ["Radio waves", "Microwaves", "Coaxial cable", "Satellite"],
+          "answer": "Coaxial cable"
+        },
+        {
+          "question": "Which of the following is an example of unguided media?",
+          "options": ["Twisted pair cable", "Coaxial cable", "Fiber optic cable", "Radio waves"],
+          "answer": "Radio waves"
+        },
+        {
+          "question": "What is the purpose of error detection in data communication?",
+          "options": ["To compress data", "To encrypt data", "To identify corrupted data", "To increase transmission speed"],
+          "answer": "To identify corrupted data"
+        },
+        {
+          "question": "Which error detection method adds a parity bit to each byte of data?",
+          "options": ["Checksum", "CRC", "Parity Check", "Hamming Code"],
+          "answer": "Parity Check"
+        },
+        {
+          "question": "What does CRC stand for in error detection?",
+          "options": ["Cyclic Redundancy Check", "Critical Record Check", "Continuous Recovery Control", "Corrupt Record Check"],
+          "answer": "Cyclic Redundancy Check"
+        },
+        {
+          "question": "Which protocol requires an acknowledgment before sending the next frame?",
+          "options": ["Stop-and-Wait", "Sliding Window", "Selective Repeat", "Go-Back-N"],
+          "answer": "Stop-and-Wait"
+        },
+        {
+          "question": "What is the main disadvantage of the Stop-and-Wait protocol?",
+          "options": ["High error rate", "Complex implementation", "Low throughput", "High power consumption"],
+          "answer": "Low throughput"
+        },
+        {
+          "question": "What is the purpose of the sliding window protocol?",
+          "options": ["To reduce error rate", "To improve throughput", "To encrypt data", "To compress data"],
+          "answer": "To improve throughput"
+        },
+        {
+          "question": "What does HDLC stand for?",
+          "options": ["High-level Data Link Control", "Hybrid Digital Link Connection", "Horizontal Data Link Conductor", "Heavy Duty Link Controller"],
+          "answer": "High-level Data Link Control"
+        },
+        {
+          "question": "Which protocol uses CSMA/CD?",
+          "options": ["Token Ring", "FDDI", "Ethernet", "Wi-Fi"],
+          "answer": "Ethernet"
+        },
+        {
+          "question": "What does CSMA/CD stand for?",
+          "options": ["Carrier Sense Multiple Access with Collision Detection", "Central System Multiple Access/Collision Detection", "Carrier Service Multiple Algorithm/Collision Diversion", "Computer System Multiple Access/Collision Division"],
+          "answer": "Carrier Sense Multiple Access with Collision Detection"
+        },
+        {
+          "question": "In CSMA/CD, what happens when a collision is detected?",
+          "options": ["Transmission continues", "Signal amplification", "Transmission stops and retries after a random time", "Switch to another channel"],
+          "answer": "Transmission stops and retries after a random time"
+        },
+        {
+          "question": "Which LAN technology uses a token-passing mechanism?",
+          "options": ["Ethernet", "Token Ring", "FDDI", "Wi-Fi"],
+          "answer": "Token Ring"
+        },
+        {
+          "question": "What is the main advantage of Token Ring over Ethernet?",
+          "options": ["Higher speed", "Lower cost", "Deterministic access time", "Simpler implementation"],
+          "answer": "Deterministic access time"
+        },
+        {
+          "question": "What is the role of the MAC sublayer?",
+          "options": ["Error detection", "Physical addressing", "Routing", "Flow control"],
+          "answer": "Physical addressing"
+        },
+        {
+          "question": "What does MAC stand for?",
+          "options": ["Media Access Control", "Multiple Access Channel", "Machine Address Code", "Main Application Control"],
+          "answer": "Media Access Control"
+        },
+        {
+          "question": "Which protocol was an early random access protocol for satellite communication?",
+          "options": ["CSMA/CD", "Token Ring", "ALOHA", "FDDI"],
+          "answer": "ALOHA"
+        },
+        {
+          "question": "What is the main difference between Pure ALOHA and Slotted ALOHA?",
+          "options": ["Speed", "Error rate", "Transmission timing", "Frame size"],
+          "answer": "Transmission timing"
+        },
+        {
+          "question": "What does LLC stand for?",
+          "options": ["Low-Level Control", "Logical Link Control", "Linear Logic Circuit", "Long Link Connection"],
+          "answer": "Logical Link Control"
+        },
+        {
+          "question": "Which sublayer of the Data Link layer is responsible for flow control?",
+          "options": ["MAC", "LLC", "PHY", "ARP"],
+          "answer": "LLC"
+        },
+        {
+          "question": "What type of network typically covers the largest geographical area?",
+          "options": ["PAN", "LAN", "MAN", "WAN"],
+          "answer": "WAN"
+        },
+        {
+          "question": "What is the typical speed range of a modern Ethernet LAN?",
+          "options": ["10 Mbps", "100 Mbps to 1 Gbps", "10 Gbps to 100 Gbps", "1 Tbps or higher"],
+          "answer": "100 Mbps to 1 Gbps"
+        },
+        {
+          "question": "Which of the following is NOT a standard Ethernet speed?",
+          "options": ["10 Mbps", "100 Mbps", "500 Mbps", "1000 Mbps"],
+          "answer": "500 Mbps"
+        },
+        {
+          "question": "Which device operates at the Physical layer of the OSI model?",
+          "options": ["Router", "Switch", "Hub", "Firewall"],
+          "answer": "Hub"
+        },
+        {
+          "question": "What is the purpose of the OSI model?",
+          "options": ["To define networking hardware", "To standardize network protocols", "To provide a framework for understanding network communication", "To encrypt network traffic"],
+          "answer": "To provide a framework for understanding network communication"
+        },
+        {
+          "question": "Which layer of the OSI model is responsible for data encryption?",
+          "options": ["Transport Layer", "Session Layer", "Presentation Layer", "Application Layer"],
+          "answer": "Presentation Layer"
+        },
+        {
+          "question": "Which of the following is not a type of network topology?",
+          "options": ["Star", "Ring", "Bus", "Octagon"],
+          "answer": "Octagon"
+        },
+        {
+          "question": "What is the maximum length of a standard UTP Ethernet cable?",
+          "options": ["100 meters", "200 meters", "500 meters", "1000 meters"],
+          "answer": "100 meters"
+        },
+        {
+          "question": "What does UTP stand for?",
+          "options": ["Unified Transfer Protocol", "Unshielded Twisted Pair", "Universal Transmission Path", "Unidirectional Transmission Protocol"],
+          "answer": "Unshielded Twisted Pair"
+        },
+        {
+          "question": "Which topology requires a central device to function?",
+          "options": ["Ring", "Star", "Bus", "Mesh"],
+          "answer": "Star"
+        },
+        {
+          "question": "What happens to network functionality if one device fails in a bus topology?",
+          "options": ["The entire network fails", "Only that device is affected", "Half the network fails", "The network slows down"],
+          "answer": "Only that device is affected"
+        },
+        {
+          "question": "What happens to network functionality if the central hub fails in a star topology?",
+          "options": ["Only one device is affected", "Half the network fails", "The entire network fails", "Nothing happens"],
+          "answer": "The entire network fails"
+        },
+        {
+          "question": "Which layer of the OSI model handles end-to-end connections?",
+          "options": ["Network Layer", "Transport Layer", "Session Layer", "Data Link Layer"],
+          "answer": "Transport Layer"
+        },
+        {
+          "question": "What device connects different networks together?",
+          "options": ["Hub", "Switch", "Router", "Repeater"],
+          "answer": "Router"
+        },
+        {
+          "question": "Which device amplifies a signal to extend network distance?",
+          "options": ["Hub", "Switch", "Router", "Repeater"],
+          "answer": "Repeater"
+        },
+        {
+          "question": "What is the main difference between analog and digital transmission?",
+          "options": ["Speed", "Distance", "Signal type", "Cost"],
+          "answer": "Signal type"
+        },
+        {
+          "question": "Which of the following devices operates at the Network layer?",
+          "options": ["Hub", "Switch", "Router", "Repeater"],
+          "answer": "Router"
+        },
+        {
+          "question": "What is the primary function of framing in the Data Link layer?",
+          "options": ["Error detection", "To identify the start and end of frames", "Flow control", "Physical addressing"],
+          "answer": "To identify the start and end of frames"
+        },
+        {
+          "question": "Which error correction method can detect and correct errors?",
+          "options": ["Parity check", "Checksum", "CRC", "Hamming code"],
+          "answer": "Hamming code"
+        },
+        {
+          "question": "In which year was Ethernet first standardized?",
+          "options": ["1973", "1980", "1983", "1995"],
+          "answer": "1983"
+        },
+        {
+          "question": "Who invented Ethernet?",
+          "options": ["Vint Cerf", "Tim Berners-Lee", "Robert Metcalfe", "Charles Babbage"],
+          "answer": "Robert Metcalfe"
+        },
+        {
+          "question": "What is the maximum number of devices recommended on a single Token Ring network?",
+          "options": ["33", "72", "260", "1024"],
+          "answer": "260"
+        },
+        {
+          "question": "What is the purpose of a MAC address?",
+          "options": ["To identify the network", "To identify a device on a network", "To encrypt data", "To compress data"],
+          "answer": "To identify a device on a network"
+        },
+        {
+          "question": "How many bits are in a MAC address?",
+          "options": ["32 bits", "48 bits", "64 bits", "128 bits"],
+          "answer": "48 bits"
+        },
+        {
+          "question": "Which of the following is not an advantage of fiber optic cables?",
+          "options": ["High bandwidth", "Low attenuation", "Immunity to electromagnetic interference", "Low cost"],
+          "answer": "Low cost"
+        },
+        {
+          "question": "What defines the difference between a LAN and a WAN?",
+          "options": ["Speed", "Geographical area", "Number of users", "Security"],
+          "answer": "Geographical area"
+        },
+        {
+          "question": "Which network technology was developed by IBM?",
+          "options": ["Ethernet", "Token Ring", "FDDI", "ATM"],
+          "answer": "Token Ring"
+        },
+        {
+          "question": "What does ISO stand for?",
+          "options": ["International Standards Organization", "International Society for Optics", "Internet Service Operators", "Information Security Office"],
+          "answer": "International Standards Organization"
+        },
+        {
+          "question": "What year was the OSI model introduced?",
+          "options": ["1969", "1974", "1980", "1984"],
+          "answer": "1984"
+        },
+        {
+          "question": "What is the advantage of a connection-oriented protocol?",
+          "options": ["Simplicity", "Speed", "Reliability", "Low overhead"],
+          "answer": "Reliability"
+        },
+        {
+          "question": "What is the advantage of a connectionless protocol?",
+          "options": ["Reliability", "Speed and low overhead", "Better error correction", "Guaranteed delivery"],
+          "answer": "Speed and low overhead"
+        },
+        {
+          "question": "Which multiplexing technique assigns different frequencies to different signals?",
+          "options": ["TDM", "FDM", "WDM", "CDMA"],
+          "answer": "FDM"
+        },
+        {
+          "question": "What is packet switching?",
+          "options": ["A method of routing packets", "Converting analog signals to digital", "Dividing messages into packets for transmission", "Connecting networks together"],
+          "answer": "Dividing messages into packets for transmission"
+        },
+        {
+          "question": "Which technology uses a token to control access to the transmission medium?",
+          "options": ["Ethernet", "Token Ring", "FDDI", "Both Token Ring and FDDI"],
+          "answer": "Both Token Ring and FDDI"
+        },
+        {
+          "question": "What does FDDI stand for?",
+          "options": ["Fast Data Distribution Interface", "Fiber Distributed Data Interface", "Full Duplex Digital Interface", "Fast Digital Data Implementation"],
+          "answer": "Fiber Distributed Data Interface"
+        },
+        {
+          "question": "Which network technology is based on a logical ring but a physical star topology?",
+          "options": ["Ethernet", "Token Ring", "FDDI", "ATM"],
+          "answer": "Token Ring"
+        },
+        {
+          "question": "In the OSI model, at which layer does TCP operate?",
+          "options": ["Network Layer", "Transport Layer", "Session Layer", "Application Layer"],
+          "answer": "Transport Layer"
+        },
+        {
+          "question": "What is a major advantage of digital transmission over analog?",
+          "options": ["Lower cost", "Simpler equipment", "Better noise immunity", "Higher bandwidth"],
+          "answer": "Better noise immunity"
+        },
+        {
+          "question": "What happens when a token is 'captured' in a Token Ring network?",
+          "options": ["The network fails", "The device can transmit data", "The token is destroyed", "A new token is created"],
+          "answer": "The device can transmit data"
+        },
+        {
+          "question": "What was the original purpose of ARPANET, the predecessor to the Internet?",
+          "options": ["Commercial networking", "Military communications", "Academic research networking", "Personal communications"],
+          "answer": "Academic research networking"
+        },
+        {
+          "question": "What is the main difference between a hub and a switch?",
+          "options": ["Cost", "Speed", "Size", "Intelligence in forwarding data"],
+          "answer": "Intelligence in forwarding data"
+        },
+        {
+          "question": "Which one is NOT a characteristic of fiber optic cable?",
+          "options": ["High bandwidth", "Light transmission", "Electromagnetic interference immunity", "Electrical conductivity"],
+          "answer": "Electrical conductivity"
+        },
+        {
+          "question": "What is the function of the Logical Link Control (LLC) sublayer?",
+          "options": ["Physical addressing", "Error detection", "Flow control and error control", "Routing"],
+          "answer": "Flow control and error control"
+        },
+        {
+          "question": "Which of these networks has the highest data transmission rate?",
+          "options": ["Basic Ethernet (10Base-T)", "Fast Ethernet (100Base-T)", "Gigabit Ethernet", "10 Gigabit Ethernet"],
+          "answer": "10 Gigabit Ethernet"
+        },
+        {
+          "question": "What is the main purpose of the ICMP protocol?",
+          "options": ["File transfer", "Email transmission", "Network diagnostics and error reporting", "Web browsing"],
+          "answer": "Network diagnostics and error reporting"
+        },
+        {
+          "question": "In the context of networks, what does 'bandwidth' refer to?",
+          "options": ["Network security level", "Data transmission capacity", "Cable thickness", "Signal strength"],
+          "answer": "Data transmission capacity"
+        },
+        {
+          "question": "What type of connector is commonly used with UTP cable?",
+          "options": ["BNC", "RJ-45", "RJ-11", "USB"],
+          "answer": "RJ-45"
+        },
+        {
+          "question": "What is a 'collision domain'?",
+          "options": ["A secure network zone", "An area where signal interference occurs", "A network segment where collisions can occur", "A damaged section of network cable"],
+          "answer": "A network segment where collisions can occur"
+        },
+        {
+          "question": "Which device divides a network into multiple collision domains?",
+          "options": ["Repeater", "Hub", "Switch", "Router"],
+          "answer": "Switch"
+        },
+        {
+          "question": "What is the purpose of the ARP protocol?",
+          "options": ["To translate domain names to IP addresses", "To map IP addresses to MAC addresses", "To route packets between networks", "To establish secure connections"],
+          "answer": "To map IP addresses to MAC addresses"
+        },
+        {
+          "question": "What does ARP stand for?",
+          "options": ["Address Resolution Protocol", "Advanced Routing Protocol", "Alternative Routing Path", "Address Relay Protocol"],
+          "answer": "Address Resolution Protocol"
+        },
+        {
+          "question": "When was packet switching first proposed?",
+          "options": ["1950s", "1960s", "1970s", "1980s"],
+          "answer": "1960s"
+        },
+        {
+          "question": "What is the primary difference between circuit switching and packet switching?",
+          "options": ["Cost", "Dedicated path vs. shared path", "Speed", "Security"],
+          "answer": "Dedicated path vs. shared path"
+        },
+        {
+          "question": "What is the purpose of a protocol in networking?",
+          "options": ["To secure data", "To define rules for communication", "To compress data", "To translate addresses"],
+          "answer": "To define rules for communication"
+        },
+        {
+          "question": "Which term describes the time it takes for a signal to travel from source to destination?",
+          "options": ["Bandwidth", "Throughput", "Latency", "Jitter"],
+          "answer": "Latency"
+        }
+      ],
+    medium: [
+        {
+            "question": "Which organization developed the ARPANET, the precursor to the modern Internet?",
+            "options": ["NASA", "DARPA", "IBM", "MIT"],
+            "answer": "DARPA"
+          },
+          {
+            "question": "In which decade was the first message sent over ARPANET?",
+            "options": ["1950s", "1960s", "1970s", "1980s"],
+            "answer": "1960s"
+          },
+          {
+            "question": "Who is credited with inventing the World Wide Web?",
+            "options": ["Vinton Cerf", "Tim Berners-Lee", "Robert Kahn", "Claude Shannon"],
+            "answer": "Tim Berners-Lee"
+          },
+          {
+            "question": "What was the first widely used networking protocol for the Internet?",
+            "options": ["UDP", "IPX/SPX", "TCP/IP", "NetBEUI"],
+            "answer": "TCP/IP"
+          },
+          {
+            "question": "Which networking model was introduced by the International Organization for Standardization (ISO)?",
+            "options": ["TCP/IP Model", "OSI Model", "Peer-to-Peer Model", "Client-Server Model"],
+            "answer": "OSI Model"
+          },
+          {
+            "question": "What is the primary purpose of packet switching in computer networks?",
+            "options": [
+              "To send entire files at once",
+              "To divide data into smaller units for efficient transmission",
+              "To establish a dedicated circuit for communication",
+              "To prevent data from being transmitted"
+            ],
+            "answer": "To divide data into smaller units for efficient transmission"
+          },
+          {
+            "question": "Which of the following is NOT a network topology?",
+            "options": ["Star", "Mesh", "Circular", "Bus"],
+            "answer": "Circular"
+          },
+          {
+            "question": "Which company played a crucial role in developing Ethernet technology?",
+            "options": ["Intel", "IBM", "Xerox", "Cisco"],
+            "answer": "Xerox"
+          },
+          {
+            "question": "What was the name of the first email system used on ARPANET?",
+            "options": ["SMTP", "SENDMSG", "MailNet", "CP/Mail"],
+            "answer": "SENDMSG"
+          },
+          {
+            "question": "What is the significance of RFC (Request for Comments) in networking?",
+            "options": [
+              "They are regulatory policies for Internet governance",
+              "They define and standardize Internet technologies",
+              "They are used for internal network troubleshooting",
+              "They describe only hardware specifications"
+            ],
+            "answer": "They define and standardize Internet technologies"
+          },
+          {
+            "question": "Which of the following best describes a Local Area Network (LAN)?",
+            "options": [
+              "A network covering an entire country",
+              "A network within a small geographic area like an office",
+              "A network spanning multiple cities",
+              "A network using satellite communication"
+            ],
+            "answer": "A network within a small geographic area like an office"
+          },
+          {
+            "question": "What is the primary difference between a LAN and a WAN?",
+            "options": [
+              "LAN covers a small area, while WAN covers a large area",
+              "LAN uses satellites, while WAN does not",
+              "LAN is slower than WAN",
+              "LAN connects only wireless devices"
+            ],
+            "answer": "LAN covers a small area, while WAN covers a large area"
+          },
+          {
+            "question": "Which technology is commonly used in MANs?",
+            "options": [
+              "Fiber-optic rings",
+              "Satellite communication",
+              "Dial-up connections",
+              "Infrared communication"
+            ],
+            "answer": "Fiber-optic rings"
+          },
+          {
+            "question": "What is the typical speed range of a LAN?",
+            "options": [
+              "1 Mbps - 10 Mbps",
+              "10 Mbps - 1 Gbps",
+              "1 Gbps - 100 Gbps",
+              "Less than 1 Mbps"
+            ],
+            "answer": "10 Mbps - 1 Gbps"
+          },
+          {
+            "question": "Which device is commonly used to connect multiple LANs together?",
+            "options": [
+              "Router",
+              "Switch",
+              "Hub",
+              "Repeater"
+            ],
+            "answer": "Router"
+          },
+          {
+            "question": "Which of the following networks is most likely to use leased telecommunication lines?",
+            "options": [
+              "LAN",
+              "MAN",
+              "WAN",
+              "PAN"
+            ],
+            "answer": "WAN"
+          },
+          {
+            "question": "What is the primary purpose of a MAN?",
+            "options": [
+              "To connect devices within a single building",
+              "To interconnect LANs within a city",
+              "To connect different countries",
+              "To provide internet to rural areas"
+            ],
+            "answer": "To interconnect LANs within a city"
+          },
+          {
+            "question": "Which protocol is commonly used for WAN connections?",
+            "options": [
+              "Ethernet",
+              "PPP (Point-to-Point Protocol)",
+              "Bluetooth",
+              "Wi-Fi"
+            ],
+            "answer": "PPP (Point-to-Point Protocol)"
+          },
+          {
+            "question": "Which of the following is an example of a WAN?",
+            "options": [
+              "A company's headquarters connected to branch offices worldwide",
+              "A school's computer lab",
+              "A city's public Wi-Fi network",
+              "A home Wi-Fi network"
+            ],
+            "answer": "A company's headquarters connected to branch offices worldwide"
+          },
+          {
+            "question": "Which of the following is a key characteristic of WANs?",
+            "options": [
+              "They use high-speed fiber connections within a small area",
+              "They connect computers within a single building",
+              "They rely on multiple networking technologies, including satellite links",
+              "They are always wireless networks"
+            ],
+            "answer": "They rely on multiple networking technologies, including satellite links"
+          },
+          {
+            "question": "Which network topology uses a central hub to connect all devices?",
+            "options": ["Bus", "Star", "Ring", "Mesh"],
+            "answer": "Star"
+          },
+          {
+            "question": "In which OSI layer does data encapsulation occur?",
+            "options": ["Transport", "Network", "Data Link", "Physical"],
+            "answer": "Data Link"
+          },
+          {
+            "question": "Which topology has a direct point-to-point connection between every pair of nodes?",
+            "options": ["Bus", "Star", "Mesh", "Ring"],
+            "answer": "Mesh"
+          },
+          {
+            "question": "Which layer of the OSI model is responsible for logical addressing and routing?",
+            "options": ["Physical", "Data Link", "Network", "Transport"],
+            "answer": "Network"
+          },
+          {
+            "question": "Which OSI layer is responsible for end-to-end communication and reliability?",
+            "options": ["Session", "Transport", "Presentation", "Application"],
+            "answer": "Transport"
+          },
+          {
+            "question": "Which of the following is a disadvantage of a bus topology?",
+            "options": ["Difficult to expand", "Expensive to set up", "Data collision is common", "Requires complex cabling"],
+            "answer": "Data collision is common"
+          },
+          {
+            "question": "At which OSI layer do switches primarily operate?",
+            "options": ["Network", "Data Link", "Transport", "Physical"],
+            "answer": "Data Link"
+          },
+          {
+            "question": "Which of these network topologies allows data to travel in one direction only?",
+            "options": ["Bus", "Ring", "Star", "Mesh"],
+            "answer": "Ring"
+          },
+          {
+            "question": "Which layer of the OSI model handles encryption and data compression?",
+            "options": ["Transport", "Session", "Presentation", "Application"],
+            "answer": "Presentation"
+          },
+          {
+            "question": "Which topology requires the least amount of cabling?",
+            "options": ["Star", "Mesh", "Bus", "Ring"],
+            "answer": "Bus"
+          },
+          {
+            "question": "Which of the following is a connection-oriented protocol?",
+            "options": ["TCP", "UDP", "ICMP", "ARP"],
+            "answer": "TCP"
+          },
+          {
+            "question": "Which protocol is typically used for real-time applications like video streaming?",
+            "options": ["TCP", "UDP", "FTP", "SMTP"],
+            "answer": "UDP"
+          },
+          {
+            "question": "In connection-oriented communication, what must happen before data transmission?",
+            "options": ["Data is sent immediately", "A connection is established", "Packets are randomly sent", "No handshake is needed"],
+            "answer": "A connection is established"
+          },
+          {
+            "question": "Which of the following is a key advantage of connectionless communication?",
+            "options": [
+              "Reliable data transmission",
+              "Lower latency and faster delivery",
+              "Ensures data is received in order",
+              "Requires three-way handshake"
+            ],
+            "answer": "Lower latency and faster delivery"
+          },
+          {
+            "question": "What type of communication does UDP follow?",
+            "options": ["Connection-oriented", "Connectionless", "Circuit switching", "Hybrid"],
+            "answer": "Connectionless"
+          },
+          {
+            "question": "In TCP, what mechanism ensures ordered delivery of packets?",
+            "options": ["Acknowledgments", "Checksums", "Sequence numbers", "Timeouts"],
+            "answer": "Sequence numbers"
+          },
+          {
+            "question": "Which of the following statements about UDP is true?",
+            "options": [
+              "It guarantees delivery of packets",
+              "It provides flow control",
+              "It is faster than TCP",
+              "It requires a handshake before communication"
+            ],
+            "answer": "It is faster than TCP"
+          },
+          {
+            "question": "Which layer of the OSI model does connection-oriented communication primarily operate on?",
+            "options": ["Network", "Transport", "Data Link", "Physical"],
+            "answer": "Transport"
+          },
+          {
+            "question": "What is a disadvantage of connection-oriented communication?",
+            "options": [
+              "Higher overhead due to connection setup",
+              "Unreliable data transfer",
+              "Data may arrive out of order",
+              "It does not support error checking"
+            ],
+            "answer": "Higher overhead due to connection setup"
+          },
+          {
+            "question": "Which of the following applications is most likely to use TCP instead of UDP?",
+            "options": ["Live gaming", "VoIP calls", "File downloads", "Online video streaming"],
+            "answer": "File downloads"
+          },
+          {
+            "question": "Which encoding technique uses a transition at the middle of each bit period to ensure synchronization?",
+            "options": ["NRZ-L", "Manchester", "AMI", "B8ZS"],
+            "answer": "Manchester"
+          },
+          {
+            "question": "What is the primary purpose of data link control in communication systems?",
+            "options": [
+              "To convert analog signals to digital signals",
+              "To manage error detection and flow control",
+              "To encode data for transmission",
+              "To multiplex multiple signals"
+            ],
+            "answer": "To manage error detection and flow control"
+          },
+          {
+            "question": "Which of the following is NOT a type of multiplexing technique?",
+            "options": ["TDM", "FDM", "CDMA", "CRC"],
+            "answer": "CRC"
+          },
+          {
+            "question": "In Time Division Multiplexing (TDM), what is assigned to each data source?",
+            "options": ["A unique frequency", "A unique time slot", "A unique code", "A unique voltage level"],
+            "answer": "A unique time slot"
+          },
+          {
+            "question": "Which error detection technique involves adding extra bits based on modulo-2 division?",
+            "options": ["Parity Check", "Checksum", "CRC", "Hamming Code"],
+            "answer": "CRC"
+          },
+          {
+            "question": "Which transmission mode allows data to be sent in both directions but only one direction at a time?",
+            "options": ["Simplex", "Half-duplex", "Full-duplex", "Synchronous"],
+            "answer": "Half-duplex"
+          },
+          {
+            "question": "Which multiplexing technique is commonly used for fiber optic communication?",
+            "options": ["TDM", "FDM", "WDM", "SDM"],
+            "answer": "WDM"
+          },
+          {
+            "question": "What does HDLC (High-Level Data Link Control) primarily provide?",
+            "options": [
+              "Bit-oriented data link control",
+              "Character-oriented data transmission",
+              "Error-free wireless communication",
+              "Multiplexing of analog signals"
+            ],
+            "answer": "Bit-oriented data link control"
+          },
+          {
+            "question": "Which encoding scheme ensures that there are no long sequences of 0s in the transmitted data?",
+            "options": ["NRZ-I", "Manchester", "B8ZS", "NRZ-L"],
+            "answer": "B8ZS"
+          },
+          {
+            "question": "In Frequency Division Multiplexing (FDM), what is used to prevent overlapping between channels?",
+            "options": ["Guard bands", "Time slots", "Digital signals", "Synchronization bits"],
+            "answer": "Guard bands"
+          },
+          {
+            "question": "What is the primary advantage of packet switching over circuit switching?",
+            "options": [
+              "Lower latency",
+              "Higher efficiency in data transmission",
+              "Dedicated connection between sender and receiver",
+              "Fixed bandwidth allocation"
+            ],
+            "answer": "Higher efficiency in data transmission"
+          },
+          {
+            "question": "Which of the following protocols is commonly associated with packet switching?",
+            "options": [
+              "TCP/IP",
+              "ATM",
+              "PSTN",
+              "ISDN"
+            ],
+            "answer": "TCP/IP"
+          },
+          {
+            "question": "In packet-switched networks, packets may take different routes to the destination. What is this property called?",
+            "options": [
+              "Packet fragmentation",
+              "Routing diversity",
+              "Store-and-forward",
+              "Dynamic routing"
+            ],
+            "answer": "Dynamic routing"
+          },
+          {
+            "question": "Which layer of the OSI model is responsible for packet switching and routing?",
+            "options": [
+              "Physical layer",
+              "Data Link layer",
+              "Network layer",
+              "Transport layer"
+            ],
+            "answer": "Network layer"
+          },
+          {
+            "question": "What happens when packets arrive at the destination out of order?",
+            "options": [
+              "They are dropped and retransmitted",
+              "They are discarded",
+              "They are reassembled in the correct order",
+              "They are sent back to the sender"
+            ],
+            "answer": "They are reassembled in the correct order"
+          },
+          {
+            "question": "Which of the following is a disadvantage of packet switching?",
+            "options": [
+              "High resource utilization",
+              "Increased security",
+              "Potential for packet loss and delay",
+              "Efficient bandwidth usage"
+            ],
+            "answer": "Potential for packet loss and delay"
+          },
+          {
+            "question": "What does a router do in a packet-switched network?",
+            "options": [
+              "Assigns IP addresses to devices",
+              "Forwards packets based on destination addresses",
+              "Controls transmission rates",
+              "Encrypts all network traffic"
+            ],
+            "answer": "Forwards packets based on destination addresses"
+          },
+          {
+            "question": "Which of the following packet-switching techniques sends data immediately without reserving bandwidth?",
+            "options": [
+              "Virtual circuit switching",
+              "Message switching",
+              "Datagram packet switching",
+              "Circuit switching"
+            ],
+            "answer": "Datagram packet switching"
+          },
+          {
+            "question": "What is the key difference between virtual circuit switching and datagram switching?",
+            "options": [
+              "Virtual circuit switching requires a dedicated path, datagram does not",
+              "Datagram switching is connection-oriented, virtual circuit is connectionless",
+              "Virtual circuit switching is faster than datagram switching",
+              "Datagram switching guarantees packet delivery order"
+            ],
+            "answer": "Virtual circuit switching requires a dedicated path, datagram does not"
+          },
+          {
+            "question": "Which network technology primarily relies on packet switching?",
+            "options": [
+              "Public Switched Telephone Network (PSTN)",
+              "Integrated Services Digital Network (ISDN)",
+              "Ethernet",
+              "Asynchronous Transfer Mode (ATM)"
+            ],
+            "answer": "Ethernet"
+          },
+          {
+            "question": "Which topology is most commonly used in Ethernet LANs?",
+            "options": ["Bus", "Star", "Ring", "Mesh"],
+            "answer": "Star"
+          },
+          {
+            "question": "What is the standard maximum segment length for a 100BASE-TX Ethernet cable?",
+            "options": ["50 meters", "100 meters", "200 meters", "500 meters"],
+            "answer": "100 meters"
+          },
+          {
+            "question": "Which access method does Ethernet use?",
+            "options": ["Token Passing", "CSMA/CD", "Polling", "TDMA"],
+            "answer": "CSMA/CD"
+          },
+          {
+            "question": "What is the data transfer rate of a standard Token Ring network?",
+            "options": ["4 Mbps", "10 Mbps", "100 Mbps", "1 Gbps"],
+            "answer": "4 Mbps"
+          },
+          {
+            "question": "Which IEEE standard defines Ethernet?",
+            "options": ["802.3", "802.5", "802.11", "802.15"],
+            "answer": "802.3"
+          },
+          {
+            "question": "In a Token Ring network, what happens if the token is lost?",
+            "options": [
+              "The network stops functioning",
+              "A new token is generated after a timeout",
+              "The network switches to Ethernet mode",
+              "All devices reset automatically"
+            ],
+            "answer": "A new token is generated after a timeout"
+          },
+          {
+            "question": "Which device is used to extend an Ethernet network beyond its collision domain?",
+            "options": ["Hub", "Repeater", "Switch", "Bridge"],
+            "answer": "Switch"
+          },
+          {
+            "question": "What is the primary function of the MAC address in a LAN?",
+            "options": [
+              "To identify devices uniquely at the data link layer",
+              "To provide an IP address to the device",
+              "To encrypt data packets",
+              "To enable broadcasting of data"
+            ],
+            "answer": "To identify devices uniquely at the data link layer"
+          },
+          {
+            "question": "Which of the following is NOT an advantage of a Token Ring network?",
+            "options": [
+              "Predictable network performance",
+              "Reduced packet collisions",
+              "Higher scalability than Ethernet",
+              "Deterministic access method"
+            ],
+            "answer": "Higher scalability than Ethernet"
+          },
+          {
+            "question": "What is the purpose of the preamble in an Ethernet frame?",
+            "options": [
+              "To indicate the end of the frame",
+              "To synchronize communication between sender and receiver",
+              "To store the source and destination MAC addresses",
+              "To provide error correction information"
+            ],
+            "answer": "To synchronize communication between sender and receiver"
+          },
+          {
+            "question": "Which network device operates at the data link layer and is used to filter and forward packets?",
+            "options": ["Router", "Switch", "Hub", "Modem"],
+            "answer": "Switch"
+          },
+          {
+            "question": "Which device is responsible for connecting different networks and forwarding data between them?",
+            "options": ["Switch", "Router", "Repeater", "Bridge"],
+            "answer": "Router"
+          },
+          {
+            "question": "What is the primary function of a repeater in networking?",
+            "options": ["Filtering traffic", "Amplifying signals", "Routing packets", "Assigning IP addresses"],
+            "answer": "Amplifying signals"
+          },
+          {
+            "question": "Which network device works at the physical layer and is used to connect multiple devices but does not filter data?",
+            "options": ["Router", "Switch", "Hub", "Firewall"],
+            "answer": "Hub"
+          },
+          {
+            "question": "What is the main purpose of a firewall in a network?",
+            "options": [
+              "To block unauthorized access",
+              "To amplify weak signals",
+              "To assign MAC addresses",
+              "To manage bandwidth allocation"
+            ],
+            "answer": "To block unauthorized access"
+          },
+          {
+            "question": "Which device translates private IP addresses into public IP addresses for internet access?",
+            "options": ["Switch", "Router", "Modem", "NAT Gateway"],
+            "answer": "NAT Gateway"
+          },
+          {
+            "question": "Which network device is used to extend the range of a Wi-Fi signal?",
+            "options": ["Repeater", "Switch", "Router", "Firewall"],
+            "answer": "Repeater"
+          },
+          {
+            "question": "A network bridge operates at which layer of the OSI model?",
+            "options": ["Physical", "Data Link", "Network", "Transport"],
+            "answer": "Data Link"
+          },
+          {
+            "question": "Which network device helps in reducing network congestion by dividing a network into segments?",
+            "options": ["Hub", "Switch", "Router", "Repeater"],
+            "answer": "Switch"
+          },
+          {
+            "question": "What type of device connects a computer to an ISP for internet access?",
+            "options": ["Router", "Modem", "Hub", "Repeater"],
+            "answer": "Modem"
+          },
+          {
+            "question": "Which networking device operates at Layer 2 of the OSI model and is responsible for forwarding data based on MAC addresses?",
+            "options": ["Router", "Gateway", "Switch", "Hub"],
+            "answer": "Switch"
+          },
+          {
+            "question": "What is the primary function of a router in a network?",
+            "options": [
+              "Forwarding data packets between different networks",
+              "Connecting devices within the same network",
+              "Amplifying network signals",
+              "Managing electrical power in networks"
+            ],
+            "answer": "Forwarding data packets between different networks"
+          },
+          {
+            "question": "Which device acts as an entry and exit point between different networks, often translating different communication protocols?",
+            "options": ["Router", "Switch", "Gateway", "Modem"],
+            "answer": "Gateway"
+          },
+          {
+            "question": "What is the main difference between a switch and a hub?",
+            "options": [
+              "A switch sends data only to the intended recipient, while a hub broadcasts it to all connected devices",
+              "A hub is more intelligent than a switch",
+              "A switch cannot connect multiple devices",
+              "A hub operates at Layer 3 of the OSI model"
+            ],
+            "answer": "A switch sends data only to the intended recipient, while a hub broadcasts it to all connected devices"
+          },
+          {
+            "question": "Which protocol is commonly used by routers to determine the best path for data packets?",
+            "options": ["HTTP", "RIP", "FTP", "POP3"],
+            "answer": "RIP"
+          },
+          {
+            "question": "Which networking device is used to connect multiple devices within the same network and uses MAC addresses to forward data?",
+            "options": ["Router", "Gateway", "Switch", "Repeater"],
+            "answer": "Switch"
+          },
+          {
+            "question": "What is the purpose of NAT (Network Address Translation) in routers?",
+            "options": [
+              "To increase network speed",
+              "To translate private IP addresses to public IP addresses for internet access",
+              "To encrypt data packets",
+              "To create multiple networks"
+            ],
+            "answer": "To translate private IP addresses to public IP addresses for internet access"
+          },
+          {
+            "question": "Which device is typically used to connect different types of networks that use different communication protocols?",
+            "options": ["Router", "Switch", "Gateway", "Bridge"],
+            "answer": "Gateway"
+          },
+          {
+            "question": "Which routing protocol is commonly used for dynamic routing in large enterprise networks?",
+            "options": ["RIP", "EIGRP", "SMTP", "DHCP"],
+            "answer": "EIGRP"
+          },
+          {
+            "question": "Which type of switch is capable of managing VLANs and can be configured via a command-line interface or web interface?",
+            "options": ["Unmanaged switch", "Managed switch", "Hub", "Repeater"],
+            "answer": "Managed switch"
+          },
+          {
+            "question": "Which of the following is NOT a type of guided transmission media?",
+            "options": ["Twisted pair cable", "Coaxial cable", "Fiber-optic cable", "Radio waves"],
+            "answer": "Radio waves"
+          },
+          {
+            "question": "Which transmission media is best suited for long-distance, high-speed data transmission?",
+            "options": ["Twisted pair cable", "Coaxial cable", "Fiber-optic cable", "Infrared"],
+            "answer": "Fiber-optic cable"
+          },
+          {
+            "question": "What is the main disadvantage of coaxial cables?",
+            "options": ["Low bandwidth", "High susceptibility to interference", "Expensive installation", "Limited distance"],
+            "answer": "Expensive installation"
+          },
+          {
+            "question": "Which of the following is NOT an unguided transmission media?",
+            "options": ["Microwave", "Satellite", "Infrared", "Fiber-optic cable"],
+            "answer": "Fiber-optic cable"
+          },
+          {
+            "question": "What is the purpose of a repeater in a communication channel?",
+            "options": ["To amplify signals", "To decode signals", "To convert signals", "To encrypt signals"],
+            "answer": "To amplify signals"
+          },
+          {
+            "question": "Which frequency range does microwave transmission typically operate in?",
+            "options": ["1 GHz - 30 GHz", "30 MHz - 300 MHz", "300 kHz - 3 MHz", "10 Hz - 100 kHz"],
+            "answer": "1 GHz - 30 GHz"
+          },
+          {
+            "question": "Which of the following statements about analog signals is true?",
+            "options": ["They have discrete values", "They are continuous in nature", "They use binary representation", "They do not degrade over distance"],
+            "answer": "They are continuous in nature"
+          },
+          {
+            "question": "Which of the following is NOT a characteristic of digital signals?",
+            "options": ["Discrete values", "Less affected by noise", "Requires analog-to-digital conversion", "Requires infinite bandwidth"],
+            "answer": "Requires infinite bandwidth"
+          },
+          {
+            "question": "Which modulation technique is used to change the amplitude of a carrier wave?",
+            "options": ["Amplitude Modulation", "Frequency Modulation", "Phase Modulation", "Pulse Modulation"],
+            "answer": "Amplitude Modulation"
+          },
+          {
+            "question": "What is the main advantage of Frequency Modulation (FM) over Amplitude Modulation (AM)?",
+            "options": ["Lower bandwidth", "Better noise immunity", "Simpler circuit design", "Higher power efficiency"],
+            "answer": "Better noise immunity"
+          },
+          {
+            "question": "Which type of digital encoding uses two voltage levels to represent binary 1 and 0?",
+            "options": ["Manchester Encoding", "Non-Return-to-Zero (NRZ)", "Differential Manchester", "4B/5B Encoding"],
+            "answer": "Non-Return-to-Zero (NRZ)"
+          },
+          {
+            "question": "Which term refers to the rate at which data is transmitted in a digital communication system?",
+            "options": ["Bandwidth", "Baud rate", "Attenuation", "Modulation"],
+            "answer": "Baud rate"
+          },
+          {
+            "question": "In which type of transmission does data travel in both directions but only one direction at a time?",
+            "options": ["Simplex", "Half-Duplex", "Full-Duplex", "Serial"],
+            "answer": "Half-Duplex"
+          },
+          {
+            "question": "Which encoding method ensures there are no long sequences of zeroes in a transmission?",
+            "options": ["Manchester Encoding", "Non-Return-to-Zero (NRZ)", "Bipolar Encoding", "4B/5B Encoding"],
+            "answer": "4B/5B Encoding"
+          },
+          {
+            "question": "What is the main drawback of analog transmission over long distances?",
+            "options": ["Requires less bandwidth", "More susceptible to noise", "Easier to multiplex", "Requires digital conversion"],
+            "answer": "More susceptible to noise"
+          },
+          {
+            "question": "Which layer of the OSI model does the Data Link Layer belong to?",
+            "options": ["Layer 1", "Layer 2", "Layer 3", "Layer 4"],
+            "answer": "Layer 2"
+          },
+          {
+            "question": "What is the main function of the Data Link Layer?",
+            "options": [
+              "Routing packets",
+              "Providing end-to-end communication",
+              "Framing and error control",
+              "Managing encryption"
+            ],
+            "answer": "Framing and error control"
+          },
+          {
+            "question": "Which of the following is NOT a type of framing method?",
+            "options": ["Character count", "Bit stuffing", "Byte stuffing", "Checksum stuffing"],
+            "answer": "Checksum stuffing"
+          },
+          {
+            "question": "In bit stuffing, which special bit pattern is used to indicate the end of a frame?",
+            "options": ["01111110", "11111111", "00000000", "10101010"],
+            "answer": "01111110"
+          },
+          {
+            "question": "Which of the following is an error detection technique?",
+            "options": ["Hamming code", "Cyclic Redundancy Check", "Go-Back-N", "Stop-and-Wait"],
+            "answer": "Cyclic Redundancy Check"
+          },
+          {
+            "question": "How many bits are used for CRC-32 error detection?",
+            "options": ["16", "24", "32", "64"],
+            "answer": "32"
+          },
+          {
+            "question": "Which error detection method adds parity bits to the data?",
+            "options": ["Checksum", "Hamming code", "CRC", "Go-Back-N"],
+            "answer": "Hamming code"
+          },
+          {
+            "question": "What is the key advantage of Hamming code?",
+            "options": [
+              "It can correct multiple-bit errors",
+              "It can detect and correct single-bit errors",
+              "It requires no extra bits",
+              "It works only for text data"
+            ],
+            "answer": "It can detect and correct single-bit errors"
+          },
+          {
+            "question": "Which protocol retransmits a frame only when an acknowledgment is not received?",
+            "options": ["Go-Back-N", "Selective Repeat", "Stop-and-Wait", "HDLC"],
+            "answer": "Stop-and-Wait"
+          },
+          {
+            "question": "In the Stop-and-Wait protocol, what happens when an acknowledgment is lost?",
+            "options": [
+              "The sender sends the next frame",
+              "The sender retransmits the previous frame",
+              "The receiver requests retransmission",
+              "The transmission stops"
+            ],
+            "answer": "The sender retransmits the previous frame"
+          },
+          {
+            "question": "What is a disadvantage of the Stop-and-Wait protocol?",
+            "options": [
+              "It is complex to implement",
+              "It is inefficient for long-distance communication",
+              "It requires large buffer sizes",
+              "It cannot detect errors"
+            ],
+            "answer": "It is inefficient for long-distance communication"
+          },
+          {
+            "question": "Which sliding window protocol allows multiple frames to be sent before receiving an acknowledgment?",
+            "options": ["Stop-and-Wait", "Selective Repeat", "Pure ALOHA", "Slotted ALOHA"],
+            "answer": "Selective Repeat"
+          },
+          {
+            "question": "In Go-Back-N, how many frames can the sender send before needing an acknowledgment?",
+            "options": ["1", "N", "Unlimited", "2N"],
+            "answer": "N"
+          },
+          {
+            "question": "In the Sliding Window Protocol, what does the window size depend on?",
+            "options": ["Bandwidth", "Round trip time", "Error rate", "All of the above"],
+            "answer": "All of the above"
+          },
+          {
+            "question": "What is the main difference between Go-Back-N and Selective Repeat?",
+            "options": [
+              "Go-Back-N retransmits all frames after an error, while Selective Repeat retransmits only the erroneous frames",
+              "Go-Back-N requires acknowledgments for each frame",
+              "Selective Repeat uses a smaller window size",
+              "Go-Back-N does not use acknowledgments"
+            ],
+            "answer": "Go-Back-N retransmits all frames after an error, while Selective Repeat retransmits only the erroneous frames"
+          },
+          {
+            "question": "In Selective Repeat, what happens when an out-of-order frame is received?",
+            "options": [
+              "It is discarded immediately",
+              "It is buffered until the missing frames arrive",
+              "It is acknowledged and retransmitted",
+              "The sender stops sending new frames"
+            ],
+            "answer": "It is buffered until the missing frames arrive"
+          },
+          {
+            "question": "Which protocol is a data link layer standard developed by ISO?",
+            "options": ["PPP", "Ethernet", "HDLC", "IP"],
+            "answer": "HDLC"
+          },
+          {
+            "question": "What type of transmission modes does HDLC support?",
+            "options": ["Simplex only", "Half-duplex only", "Full-duplex only", "Both half-duplex and full-duplex"],
+            "answer": "Both half-duplex and full-duplex"
+          },
+          {
+            "question": "Which frame type in HDLC is used for control purposes?",
+            "options": ["Information Frame (I-Frame)", "Supervisory Frame (S-Frame)", "Unnumbered Frame (U-Frame)", "Error Frame (E-Frame)"],
+            "answer": "Supervisory Frame (S-Frame)"
+          },
+          {
+            "question": "What does the address field in an HDLC frame indicate?",
+            "options": ["Destination MAC address", "Sender's IP address", "Destination station address", "Error checksum"],
+            "answer": "Destination station address"
+          },
+          {
+            "question": "Which field in an HDLC frame is used for error detection?",
+            "options": ["Address field", "Control field", "FCS field", "Flag field"],
+            "answer": "FCS field"
+          },
+          {
+            "question": "What is the purpose of the flag field in an HDLC frame?",
+            "options": [
+              "To indicate the start and end of a frame",
+              "To carry the destination address",
+              "To detect errors",
+              "To carry data"
+            ],
+            "answer": "To indicate the start and end of a frame"
+          },
+          {
+            "question": "Which type of HDLC frame is used for transferring user data?",
+            "options": ["I-Frame", "S-Frame", "U-Frame", "Control Frame"],
+            "answer": "I-Frame"
+          },
+          {
+            "question": "How does HDLC handle flow control?",
+            "options": ["Stop-and-Wait", "Sliding Window", "ALOHA", "CSMA/CD"],
+            "answer": "Sliding Window"
+          },
+          {
+            "question": "What happens when a frame is lost in HDLC?",
+            "options": [
+              "The receiver ignores it",
+              "The sender retransmits it",
+              "A new connection is established",
+              "The data link layer shuts down"
+            ],
+            "answer": "The sender retransmits it"
+          },
+          {
+            "question": "Which organization developed HDLC?",
+            "options": ["IEEE", "ISO", "IETF", "W3C"],
+            "answer": "ISO"
+          },
+          {
+            "question": "Which of the following is NOT a field in an HDLC frame?",
+            "options": ["Flag", "Control", "Payload", "IP header"],
+            "answer": "IP header"
+          }
+        ],
+    hard: [
+        {
+          "question": "Which of the following network types typically covers a city-wide area?",
+          "options": ["LAN", "WAN", "MAN", "PAN"],
+          "answer": "MAN"
+        },
+        {
+          "question": "What is the primary purpose of the ISO/OSI model?",
+          "options": ["To define network hardware components", "To standardize networking protocols and communication", "To create a universal programming language", "To enforce cybersecurity policies"],
+          "answer": "To standardize networking protocols and communication"
+        },
+        {
+          "question": "Which layer of the OSI model is responsible for reliable end-to-end communication?",
+          "options": ["Network", "Transport", "Session", "Application"],
+          "answer": "Transport"
+        },
+        {
+          "question": "What type of transmission media uses light for data transmission?",
+          "options": ["Twisted Pair", "Coaxial Cable", "Fiber Optic", "Infrared"],
+          "answer": "Fiber Optic"
+        },
+        {
+          "question": "Which protocol is used for error detection and correction at the Data Link Layer?",
+          "options": ["TCP", "UDP", "CRC", "ICMP"],
+          "answer": "CRC"
+        },
+        {
+          "question": "In a token ring network, what happens if a token is lost?",
+          "options": ["The network continues functioning normally", "A new token is generated", "The network shuts down", "Data packets are rerouted"],
+          "answer": "A new token is generated"
+        },
+        {
+          "question": "What is the main disadvantage of the stop-and-wait protocol?",
+          "options": ["It is too complex", "It has high overhead", "It does not provide flow control", "It requires full-duplex communication"],
+          "answer": "It has high overhead"
+        },
+        {
+          "question": "Which of the following is a feature of CSMA/CD?",
+          "options": ["Token passing", "Collision detection", "Packet switching", "Acknowledgment messages"],
+          "answer": "Collision detection"
+        },
+        {
+          "question": "Which network device operates at the Network Layer of the OSI model?",
+          "options": ["Switch", "Router", "Hub", "Repeater"],
+          "answer": "Router"
+        },
+        {
+          "question": "What is the purpose of multiplexing in data communication?",
+          "options": ["To increase bandwidth", "To reduce transmission errors", "To combine multiple signals over a single medium", "To enhance security"],
+          "answer": "To combine multiple signals over a single medium"
+        },
+        {
+          "question": "Which type of multiplexing divides signals based on different frequencies?",
+          "options": ["TDM", "FDM", "CDM", "WDM"],
+          "answer": "FDM"
+        },
+        {
+          "question": "What is the maximum length of a standard Ethernet cable?",
+          "options": ["50 meters", "100 meters", "200 meters", "500 meters"],
+          "answer": "100 meters"
+        },
+        {
+          "question": "Which protocol is used in packet-switched networks for routing?",
+          "options": ["IP", "TCP", "ARP", "SMTP"],
+          "answer": "IP"
+        },
+        {
+          "question": "What is the key advantage of connection-oriented communication?",
+          "options": ["Lower latency", "Reliable data delivery", "Simpler implementation", "Lower bandwidth usage"],
+          "answer": "Reliable data delivery"
+        },
+        {
+          "question": "Which topology uses a single central cable to connect all nodes?",
+          "options": ["Star", "Ring", "Bus", "Mesh"],
+          "answer": "Bus"
+        }
+      ]
+      
+};
+
+let currentQuestion = 0;
+let totalAnswered = 0;
+let totalCorrect = 0;
+let currentQuiz = [];
+
+function startQuiz(level) {
+    currentQuiz = quizData[level];
+    document.getElementById("level-selection").style.display = "none";
+    document.getElementById("quiz-section").style.display = "block";
+    loadQuestion();
+}
+
+function loadQuestion() {
+    if (currentQuestion >= currentQuiz.length) {
+        showFinalResult();
+        return;
+    }
+    
+    const quiz = currentQuiz[currentQuestion];
+    document.getElementById("question").innerText = quiz.question;
+    const optionsContainer = document.getElementById("options");
+    optionsContainer.innerHTML = "";
+    
+    quiz.options.forEach(option => {
+        const button = document.createElement("button");
+        button.innerText = option;
+        button.onclick = () => checkAnswer(button, option);
+        optionsContainer.appendChild(button);
+    });
+}
+
+function checkAnswer(button, selected) {
+    totalAnswered++;
+    const correctAnswer = currentQuiz[currentQuestion].answer;
+    if (selected === correctAnswer) {
+        button.classList.add("correct");
+        totalCorrect++;
+        setTimeout(() => {
+            currentQuestion++;
+            loadQuestion();
+        }, 1000);
+    } else {
+        button.classList.add("wrong");
+        const optionsContainer = document.getElementById("options");
+        Array.from(optionsContainer.children).forEach(btn => {
+            if (btn.innerText === correctAnswer) {
+                btn.classList.add("correct");
+            }
+        });
+        setTimeout(() => {
+            currentQuestion++;
+            loadQuestion();
+        }, 2000);
+    }
+}
+
+function prevQuestion() {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+    }
+}
+
+function nextQuestion() {
+    if (currentQuestion < currentQuiz.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+    }
+}
+
+function showFinalResult() {
+    document.getElementById("quiz-section").style.display = "none";
+    document.getElementById("quiz-end").style.display = "block";
+    document.getElementById("final-score").innerText = `Final Score: ${totalCorrect} / ${totalAnswered}`;
+}
+
+function restartQuiz() {
+    document.getElementById("quiz-end").style.display = "none";
+    document.getElementById("level-selection").style.display = "block";
+    currentQuestion = 0;
+    totalAnswered = 0;
+    totalCorrect = 0;
+}
