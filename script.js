@@ -951,6 +951,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("start-button").addEventListener("click", startQuiz);
     document.getElementById("next-button").addEventListener("click", nextQuestion);
     document.getElementById("prev-button").addEventListener("click", prevQuestion);
+    document.getElementById("end-button").addEventListener("click", showFinalResult);
 });
 
 function startQuiz() {
@@ -986,35 +987,34 @@ function loadQuestion() {
 }
 
 function checkAnswer(button, selected) {
-  totalAnswered++;
-  const correctAnswer = shuffledQuizData[currentQuestion].answer;
-  let delay = 1000; // Default delay (1 second)
+    totalAnswered++;
+    const correctAnswer = shuffledQuizData[currentQuestion].answer;
+    let delay = 1000; // Default delay (1 second)
 
-  if (selected === correctAnswer) {
-      button.classList.add("correct");
-      totalCorrect++;
-  } else {
-      button.classList.add("wrong");
-      delay = 3000; // Wait for 3 seconds if wrong
+    if (selected === correctAnswer) {
+        button.classList.add("correct");
+        totalCorrect++;
+    } else {
+        button.classList.add("wrong");
+        delay = 3000; // Wait for 3 seconds if wrong
 
-      const optionsContainer = document.getElementById("options");
-      Array.from(optionsContainer.children).forEach(btn => {
-          if (btn.innerText === correctAnswer) {
-              btn.classList.add("correct");
-          }
-      });
-  }
+        const optionsContainer = document.getElementById("options");
+        Array.from(optionsContainer.children).forEach(btn => {
+            if (btn.innerText === correctAnswer) {
+                btn.classList.add("correct");
+            }
+        });
+    }
 
-  setTimeout(() => {
-      if (currentQuestion < shuffledQuizData.length - 1) {
-          currentQuestion++;
-          loadQuestion();
-      } else {
-          showFinalResult();
-      }
-  }, delay);
+    setTimeout(() => {
+        if (currentQuestion < shuffledQuizData.length - 1) {
+            currentQuestion++;
+            loadQuestion();
+        } else {
+            showFinalResult();
+        }
+    }, delay);
 }
-
 
 function nextQuestion() {
     if (currentQuestion < shuffledQuizData.length - 1) {
